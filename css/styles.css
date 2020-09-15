@@ -1,0 +1,292 @@
+html {
+    scroll-behavior: smooth;
+}
+
+ body{
+     margin: 0;
+     padding: 0;
+     font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    width: 1170px;
+}
+
+/* Navigation Bar */
+
+.header {
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    /* border: 1px solid fuchsia; */
+}
+
+    
+.nav-list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+}
+
+.nav-item {
+    margin:     1rem;
+}
+.nav-item a{
+    color: black;
+
+}
+
+.nav-item a:visited {
+    color: black;
+    
+}
+
+.website-name {
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.nav-item .social-media-icons {
+    font-size: 1.5rem;
+}
+
+.nav-item .social-media-icons.fb {
+    
+    color: rgb(46, 69, 129);
+}
+
+.fb{
+    color: rgb(46, 69, 129);
+}
+
+.nav-item .social-media-icons.ig { 
+    color: rgb(139, 52, 132);
+}
+
+.nav-item .social-media-icons.tw{
+    color: rgb(39, 146, 233);
+}
+
+
+
+.main{
+    
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+}
+
+.welcome-grid {
+    display: flex;
+    flex-direction: row;
+    fle
+}
+
+.welcome-grid .intro {
+    /* border: 1px solid fuchsia; */
+    width: 50%;
+    height: 400px;
+   
+}
+
+.welcome-grid .intro .title {
+    font-size:  3rem;
+    margin-top: 6rem;
+   
+}
+
+.welcome-grid .intro .title-description {
+  
+   
+}
+
+.welcome-grid .intro-img {
+    /* border: 1px solid fuchsia; */
+    width: 50%;
+    height: 400px;
+
+}
+
+.welcome-grid .intro-img .image{
+    width: 100%;
+    height: 400px;
+}
+
+.map-container {
+
+    /* left: 50%;  */
+    margin: auto;
+    max-width: 1170px;
+    position: relative;
+    margin-bottom: 4rem;
+
+    /* top: 75%; */
+    /* transform: translate(-50%, -50%); */
+    
+} 
+
+/* Map */
+
+.map-title {
+    width: 500px;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    margin: auto;
+}
+
+svg {
+    height: auto;
+    max-width: 100%;
+  }
+
+.map {
+    margin-top: 5rem;
+    position: relative;
+}
+
+.map-markers .marker {
+    display:inline-block;
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    background: rgb(92, 167, 120);
+    margin: 0 20px;
+    border-radius: 50%;
+    cursor: pointer;
+
+
+}
+
+.map-markers .marker .marker-info {
+    min-width:200px; 
+    top:-20px;
+    left:50%;
+    transform:translate(-50%, -100%);
+    padding:10px 20px;
+    color:#444444;
+    background-color:#dadada;
+    font-weight:normal;
+    font-size:13px;
+    border-radius:8px;
+    position:absolute;
+    z-index:99999999;
+    box-sizing:border-box;
+    box-shadow:0 1px 8px rgba(0,0,0,0.5);
+    display:none;
+}
+
+.profile-picture {
+    width: 80px;
+    margin: 0 auto;
+  
+    
+}
+
+.pp-img {
+    border-radius: 40px;
+    border: 1px solid rgb(92, 167, 120);
+}
+
+.map-markers .marker:hover .marker-info {
+    display:block;
+}
+
+.map-markers .marker .marker-info i {
+    position:absolute;
+    top:100%;
+    left:50%;
+    margin-left:-12px;
+    width:24px;
+    height:12px;
+    overflow:hidden;
+}
+
+.map-markers .marker .marker-info i::after {
+    content:'';
+    position:absolute;
+    width:12px;
+    height:12px;
+    left:50%;
+    transform:translate(-50%,-50%) rotate(45deg);
+    background-color:#dadada;
+    box-shadow:0 1px 8px rgba(0,0,0,0.5);
+}
+.map-markers .marker-london {
+    left: 43.1%;
+    top: 29.3%;
+}
+
+.map-markers .marker-la {
+    left: 12.5%;
+    top: 37.5%;
+}
+
+.map-markers .marker-brazil {
+    left: 30.5%;
+    top: 65.3%;
+}
+
+.map-markers .marker-sydney {
+    left: 90.5%;
+    top: 84.3%;
+}
+
+.map-markers .marker-india {
+    left: 69.5%;
+    top: 44.3%;
+}
+
+.map-markers .marker-south-africa {
+    left: 50.5%;
+    top: 80.3%;
+}
+
+.map-markers .marker-south-korea {
+    left: 82.5%;
+    top: 35%;
+}
+
+path {
+    fill: rgb(170, 170, 170);
+}
+
+.footer {
+    background-color: rgb(58, 58, 58);
+  
+    widows: 100%;
+    margin-bottom: 0;
+}
+.footer-links {
+
+    width: 1170px;
+    
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    
+    color: white;
+}
+
+.footer-link {
+margin:     1rem;
+}
+.footer-link a {
+    color: white;
+}
+
+.footer-link a:visited {
+    color: white;
+}
